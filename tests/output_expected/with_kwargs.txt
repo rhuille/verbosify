@@ -1,0 +1,53 @@
+
+------
+remove_empty_lines
+------
+@verbosify
+def hello_word(uppercase=False, **kwargs):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
+------
+remove_indentation
+------
+@verbosify
+def hello_word(uppercase=False, **kwargs):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
+------
+remove_verbose_decorator
+------
+def hello_word(uppercase=False, **kwargs):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
+------
+rewrite_def_line
+------
+def hello_word(uppercase=False, **kwargs, verbose=False):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
+------
+rewrite_comments
+------
+def hello_word(uppercase=False, **kwargs, verbose=False):
+    if uppercase:
+        if verbose: print('return hello word in uppercase')
+        return 'HELLO WORD'
+    else:
+        if verbose: print('return hello word in lowercase')
+        return 'hello word'

@@ -1,0 +1,58 @@
+
+------
+remove_empty_lines
+------
+@verbosify
+@other_decorator
+def hello_word(uppercase=False):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
+------
+remove_indentation
+------
+@verbosify
+@other_decorator
+def hello_word(uppercase=False):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
+------
+remove_verbose_decorator
+------
+@other_decorator
+def hello_word(uppercase=False):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
+------
+rewrite_def_line
+------
+@other_decorator
+def hello_word(uppercase=False, verbose=False):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
+------
+rewrite_comments
+------
+@other_decorator
+def hello_word(uppercase=False, verbose=False):
+    if uppercase:
+        if verbose: print('return hello word in uppercase')
+        return 'HELLO WORD'
+    else:
+        if verbose: print('return hello word in lowercase')
+        return 'hello word'

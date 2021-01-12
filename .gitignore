@@ -1,0 +1,5 @@
+verbosify.egg-info
+.pytest_cache
+.coverage
+tests/__pycache__
+verbosify/__pycache__

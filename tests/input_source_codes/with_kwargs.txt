@@ -1,0 +1,8 @@
+@verbosify
+def hello_word(uppercase=False, **kwargs):
+    if uppercase:
+        # verbose: return hello word in uppercase
+        return 'HELLO WORD'
+    else:
+        # verbose: return hello word in lowercase
+        return 'hello word'
