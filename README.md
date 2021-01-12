@@ -2,6 +2,10 @@
 
 A cool function decorator to print selected comments 🎤
 
+## Installation
+
+Install using `pip install -U verbosify` or `conda install verbosify -c conda-forge`.
+
 ## A Simple Example
 
 ```py

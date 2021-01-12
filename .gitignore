@@ -3,3 +3,4 @@ verbosify.egg-info
 .coverage
 tests/__pycache__
 verbosify/__pycache__
+dist/

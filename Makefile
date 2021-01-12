@@ -20,3 +20,10 @@ clean:
 	rm -rf `cat .gitignore`
 
 all: format lint test
+
+build:
+	python setup.py sdist bdist_wheel
+
+check-dist:
+	python setup.py check -ms
+	twine check dist/*
